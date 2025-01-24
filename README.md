@@ -126,16 +126,3 @@ Sinta-se à vontade para contribuir com melhorias ou sugestões para o projeto. 
 ## Licença
 
 Este projeto é de código aberto e está licenciado sob os termos da [MIT License](LICENSE).
-
-# Desafio-Amigo-secreto-PT-Main-Trabalho-Alura
-# Desafio-Amigo-Secreto-Oracle-Próxima-Educação
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
-# Challenge-Amigo-Secreto-Oracle-NextEducation
