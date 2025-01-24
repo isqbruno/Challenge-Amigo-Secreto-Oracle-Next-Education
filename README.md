@@ -36,15 +36,15 @@ Esta função utiliza a Web Speech API para narrar o conteúdo dinâmico do site
 
 ```javascript
 function exibirTextoNaTela(tag, texto) {
-    let campo = document.querySelector(tag);
-    campo.innerHTML = texto;
+    let campo = document.querySelector(tag)
+    campo.innerHTML = texto
     if ('speechSynthesis' in window) {
-        let utterance = new SpeechSynthesisUtterance(texto);
-        utterance.lang = 'pt-BR';
+        let utterance = new SpeechSynthesisUtterance(texto)
+        utterance.lang = 'pt-BR'
         utterance.rate = 1.2;
-        window.speechSynthesis.speak(utterance);
+        window.speechSynthesis.speak(utterance)
     } else {
-        console.log("Web Speech API não suportada neste navegador.");
+        console.log("Web Speech API não suportada neste navegador.")
     }
 }
 ```
@@ -54,24 +54,24 @@ Permite ao usuário adicionar nomes e evita duplicações:
 
 ```javascript
 function adicionarAmigo() {
-    const inputAmigo = document.getElementById('amigo');
-    const nome = inputAmigo.value.trim();
+    const inputAmigo = document.getElementById('amigo')
+    const nome = inputAmigo.value.trim()
 
     if (nome === "") {
-        alert("Por favor, insira um nome válido.");
-        return;
+        alert("Por favor, insira um nome válido.")
+        return
     }
 
     if (listaDeAmigos.includes(nome)) {
-        alert("Este nome já foi adicionado.");
-        inputAmigo.value = "";
-        return;
+        alert("Este nome já foi adicionado.")
+        inputAmigo.value = ""
+        return
     }
 
-    listaDeAmigos.push(nome);
-    inputAmigo.value = "";
-    inputAmigo.focus();
-    exibirTextoNaTela('#resultado', `O nome ${nome} foi adicionado à lista.`);
+    listaDeAmigos.push(nome)
+    inputAmigo.value = ""
+    inputAmigo.focus()
+    exibirTextoNaTela('#resultado', `O nome ${nome} foi adicionado à lista.`)
 }
 ```
 
@@ -81,14 +81,14 @@ Realiza o sorteio de forma randômica e exibe o resultado:
 ```javascript
 function sortearAmigo() {
     if (listaDeAmigos.length === 0) {
-        alert("Adicione pelo menos um nome antes de sortear.");
-        return;
+        alert("Adicione pelo menos um nome antes de sortear.")
+        return
     }
 
-    const indiceSorteado = Math.floor(Math.random() * listaDeAmigos.length);
-    const amigoSorteado = listaDeAmigos[indiceSorteado];
+    const indiceSorteado = Math.floor(Math.random() * listaDeAmigos.length)
+    const amigoSorteado = listaDeAmigos[indiceSorteado]
 
-    exibirResultado(amigoSorteado);
+    exibirResultado(amigoSorteado)
 }
 ```
 
